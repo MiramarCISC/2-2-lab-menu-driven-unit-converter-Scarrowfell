@@ -1,48 +1,50 @@
 #include "converter.hpp"
 #include <iostream>
 
+// Darren : Make sure to push and committ your changes look at the video on course materials on the home page
+
 using namespace std;
 
 double inchesToCentimeters(double inches) {
     // TODO: return inches converted to centimeters.
-    return 0.0;
+    return 0.0; //multiply inches by 2.54 to convert to centimeters
 }
 
 double centimetersToInches(double centimeters) {
     // TODO: return centimeters converted to inches.
-    return 0.0;
+    return 0.0; //divide centimeters by 2.54 to convert to inches
 }
 
 double poundsToKilograms(double pounds) {
     // TODO: return pounds converted to kilograms.
-    return 0.0;
+    return 0.0; //divide pounds by 2.20462 to convert to kilograms
 }
 
 double kilogramsToPounds(double kilograms) {
     // TODO: return kilograms converted to pounds.
-    return 0.0;
+    return 0.0; //multiply kilograms by 2.20462 to convert to pounds
 }
 
 double fahrenheitToCelsius(double fahrenheit) {
     // TODO: return Fahrenheit converted to Celsius.
-    return 0.0;
+    return 0.0; //subtract 32 from Fahrenheit and multiply by 5/9 to convert to Celsius
 }
 
 double celsiusToFahrenheit(double celsius) {
     // TODO: return Celsius converted to Fahrenheit.
-    return 0.0;
+    return 0.0; //multiply Celsius by 9/5 and add 32 to convert to Fahrenheit
 }
 
 bool isValidMenuChoice(int choice) {
     // TODO: return true when choice is between EXIT_CHOICE and CELSIUS_TO_FAHRENHEIT.
-    return false;
+    return 0.0; //check if choice is between 0 and 6 
 }
 
 bool requiresNonNegativeValue(int choice) {
     // Length and weight conversions cannot use negative values.
     // Temperature conversions may use negative values.
     // TODO: return true for choices 1 through 4.
-    return false;
+    return 0.0; //check if choice is between 1 and 4
 }
 
 bool isValidValueForChoice(int choice, double value) {
@@ -50,10 +52,13 @@ bool isValidValueForChoice(int choice, double value) {
     // 1. Invalid menu choices should return false.
     // 2. Length and weight conversions should reject negative values.
     // 3. Temperature conversions should allow negative values.
-    return false;
-}
+     {
+        return false;// IF none of the conditions are met, return false, if not return true.
+    }
 
-void printMenu() {
+     
+
+void printMenu(); {
     cout << endl;
     cout << "Unit Converter" << endl;
     cout << endl;
